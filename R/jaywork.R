@@ -6,9 +6,32 @@ make_dir <- function() {
   )
 
 }
-jaywork <- function() {
+
+make_analysis_rmd <- function(file_name) {
 
   rmarkdown::draft(
-    fs::path("analysis"), template = "analysis_temp", package = "jaysroutine"
+    fs::path("analysis", file_name),
+    template = "analysis_temp",
+    package = "jaysroutine"
   )
+
+}
+
+
+#' Jay's Routine for Data Analysis
+#'
+#' @param file_name File name that ends with .Rmd
+#'
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#'   jaywork("analysis.Rmd")
+#' }
+jaywork <- function(file_name) {
+
+  make_dir()
+  make_analysis_rmd(file_name)
+  usethis::edit_file(fs::path("analysis", file_name))
+
 }
