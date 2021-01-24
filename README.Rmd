@@ -35,7 +35,7 @@ This is a basic example which shows you how it works:
 ```{r example, eval = FALSE}
 library(jaysroutine)
 
-jayswork("analysis.Rmd")
+jaywork("analysis.Rmd")
 ```
 
 

@@ -25,5 +25,5 @@ This is a basic example which shows you how it works:
 ``` r
 library(jaysroutine)
 
-jayswork("analysis.Rmd")
+jaywork("analysis.Rmd")
 ```
