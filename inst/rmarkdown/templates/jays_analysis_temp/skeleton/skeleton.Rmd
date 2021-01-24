@@ -1,0 +1,39 @@
+---
+title: "Analysis Report:"
+author: "Jay"
+date: "`r Sys.Date()`"
+output:
+  word_document:
+    reference_docx: jays_docx_temp.docx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE)
+```
+
+
+```{r attach-lib}
+library(tidyverse)
+library(gt)
+```
+
+
+## Introduction
+
+
+
+## Methods
+
+
+
+## Results
+
+
+
+## Discussion
+
+
+
+## References
