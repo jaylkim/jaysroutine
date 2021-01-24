@@ -2,7 +2,7 @@ Package: jaysroutine
 Type: Package
 Title: Jay's Routine before Starting Data Analysis 
 Version: 0.0.0.9000
-Author@R: person("Jay", "Kim", email = "jay.luke.kim@gmail.com",
+Authors@R: person("Jay", "Kim", email = "jay.luke.kim@gmail.com",
                  role = c("aut", "cre")) 
 Maintainer: Jay Kim <jay.luke.kim@gmail.com>
 Description: This package creates directories and an Rmd file for data analysis.
