@@ -12,8 +12,9 @@ make_analysis_rmd <- function(file_name) {
 
   rmarkdown::draft(
     fs::path("analysis", file_name),
-    template = "analysis_temp",
-    package = "jaysroutine"
+    template = system.file("rmarkdown", "templates", "analysis_temp",
+                           package = "jaysroutine"),
+    edit = FALSE
   )
 
 }
