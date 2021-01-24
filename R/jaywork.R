@@ -1,4 +1,4 @@
-
+#' @noRd
 make_dir <- function() {
 
   fs::dir_create(
@@ -7,6 +7,7 @@ make_dir <- function() {
 
 }
 
+#' @noRd
 make_analysis_rmd <- function(file_name) {
 
   rmarkdown::draft(
