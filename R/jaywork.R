@@ -1,12 +1,14 @@
 
-jaywork <- function() {
-  ## Create directories
+make_dir <- function() {
+
   fs::dir_create(
     c("analysis", "doc", "src", "data", "output/tables", "output/figures", "ext")
   )
 
-  ## Pop-up an Rmd for analysis
+}
+jaywork <- function() {
+
   rmarkdown::draft(
-    fs::path("analysis"), template = "jays_analysis_temp", package = "jaysroutine"
+    fs::path("analysis"), template = "analysis_temp", package = "jaysroutine"
   )
 }
